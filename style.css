@@ -1,9 +1,15 @@
 :root {
   --primary-color: whitesmoke;
+  --font-color: black;
+  --card-color: rgb(248, 245, 245);
+  --save-confirmed-color: whitesmoke;
 }
 
 [data-theme="dark"] {
   --primary-color: #1c1b22;
+  --font-color: rgb(212, 207, 207);
+  --card-color:  #2c2a3a;
+  --save-confirmed-color:#78729c ;
 }
 
 
@@ -78,8 +84,12 @@ body {
   margin-top: 50px;
 }
 
+p {
+  color: var(--font-color);
+}
+
 .card {
-  background: var(--primary-color);
+  background: var(--card-color);
   margin: 10px 10px 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -107,7 +117,7 @@ body {
 
 /* Save Confirmation */
 .save-confirmed {
-  background: var(--primary-color);
+  background: var(--save-confirmed-color);
   padding: 8px 16px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
