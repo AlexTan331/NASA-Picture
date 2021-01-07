@@ -20,7 +20,7 @@ function toggleLightDarkMode() {
   theme.innerText = isLight ? "Dark Mode" : "Light Mode";
   document.documentElement.setAttribute("data-theme", switchTheme);
   localStorage.setItem("theme", switchTheme);
-  isLight = isLight ? false : true;
+  isLight = !isLight;
 }
 
 // NASA API
